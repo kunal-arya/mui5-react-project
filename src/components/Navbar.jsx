@@ -50,7 +50,7 @@ const Navbar = () => {
         <StyledToolbar>
             <Typography variant='h6' sx={{display: {xs:"none",sm:"block"}}}>Dev</Typography>
             <Pets  sx={{display: {xs:"block",sm:"none"}}} />
-            <Search><InputBase placeholder='Search....'/></Search>
+            <Search><InputBase fullWidth placeholder='Search....'/></Search>
             <Icons>
                 <Badge badgeContent={4} color="error">
                     <Mail  />
@@ -65,19 +65,19 @@ const Navbar = () => {
             </UserBox>
         </StyledToolbar>
         <Menu
-        id="menu-btn"
-        aria-labelledby="Menu-button"
-        open={openMenu}
-        onClose={e => setOpenMenu(false)}
-        anchorOrigin={{
-          vertical: 'top',
-          horizontal: 'right',
-        }}
-        transformOrigin={{
-          vertical: 'top',
-          horizontal: 'right',
-        }}
-      >
+            id="menu-btn"
+            aria-labelledby="Menu-button"
+            open={openMenu}
+            onClose={e => setOpenMenu(false)}
+            anchorOrigin={{
+            vertical: 'top',
+            horizontal: 'right',
+            }}
+            transformOrigin={{
+            vertical: 'top',
+            horizontal: 'right',
+            }}
+        >
         <MenuItem>Profile</MenuItem>
         <MenuItem>My account</MenuItem>
         <MenuItem>Logout</MenuItem>
