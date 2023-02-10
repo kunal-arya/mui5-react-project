@@ -119,10 +119,10 @@ const Sidebar = () => {
           </ListItem>
           <ListItem disablePadding>
             <ListItemButton component="a" href="#simple-list">
+            <ListItemText primary="Dark Mode" />
               <ListItemIcon>
                 <MaterialUISwitch />
               </ListItemIcon>
-              <ListItemText primary="Dark Mode" />
             </ListItemButton>
           </ListItem>
         </List>
