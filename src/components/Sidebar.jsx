@@ -4,8 +4,6 @@ import React from 'react'
 import { AccountBox, Article, Group, Person, Settings, Storefront } from '@mui/icons-material';
 
 const Sidebar = () => {
-
-
   // Switch Button for Dark/Light Theme
   const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     width: 62,
@@ -61,7 +59,8 @@ const Sidebar = () => {
         p={3} 
         sx={{display: {xs:"none", sm: "block"}}}
     >
-        <List>
+      <Box position={"fixed"}>
+      <List>
           <ListItem disablePadding>
             <ListItemButton component="a" href="#home">
               <ListItemIcon>
@@ -127,6 +126,7 @@ const Sidebar = () => {
             </ListItemButton>
           </ListItem>
         </List>
+      </Box>
     </Box>
   )
 }
